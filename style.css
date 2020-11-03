@@ -1,0 +1,46 @@
+html,
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 15px;
+  margin: 10px;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#barra_lateral {
+  width: 400px;
+  padding: 10px;
+  margin-left: 10px;
+  border: 5px solid grey;
+  background-color: rgb(240, 240, 240);
+  margin: 10;
+  color: rgb(0);
+}
+
+#confirmar {
+  margin-top: 30px;
+  margin-left: 250px;
+}
+
+#dos {
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+#base_canon {
+  margin-right: 150px;
+  margin-left: 100px;
+}
+
+#base_nueva {
+  margin-right: 150px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+#cambiarbase {
+  margin-left: 120px;
+}
