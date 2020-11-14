@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="en"><head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="latexit.js"></script>
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style_2.css">
+  <meta charset="utf-8">
+  <title> Algebra Lineal | Transformación Lineal</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00FFFF">
+    <a class="navbar-brand" href="#">Álgebra Lineal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://isabelcamila.github.io/AlgebraLineal/">Modelador cambio de base <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Imagen de una función <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div id="barra_lateral">
+
+    <script src="VP.js"></script>
+    <p> En el gráfico de la derecha se muestra un vector arbitrario (en azul) y una transformación lineal de éste (en rojo).</p>
+    <p>Puedes modificar el vector seleccionando en cualquier parte, o bien arrastrándolo con el mouse.</p>
+    <p>Puedes seleccionar cuál de las siguientes transformaciones quieres visualizar:</p>
+    <p>Rotación en 90°:</p>
+    <img id="rotacion" src="http://latex.codecogs.com/svg.latex? T(v) = \begin{pmatrix}
+0 &amp; -1\\
+1 &amp; 0\\
+\end{pmatrix}\begin{pmatrix}
+x\\
+y\\
+\end{pmatrix}" border="0">
+    <button id="opcionn_1" type="button" onclick="opcionn_1()" class="btn btn-light" style="background-color: lightcyan">Rotar en 90°</button>
+    <p>Reflexión con respecto a la recta <img src="http://latex.codecogs.com/svg.latex? x = y" border="0">:</p>
+    <img id="reflexion" src="http://latex.codecogs.com/svg.latex? T(v) = \begin{pmatrix}
+0 &amp; 1\\
+1 &amp; 0\\
+\end{pmatrix}\begin{pmatrix}
+x\\
+y\\
+\end{pmatrix}" border="0">
+    <button id="opcionn_2" type="button" onclick="opcionn_2()" class="btn btn-light" style="background-color: lightcyan">Reflexión</button>
+    <p>Proyección sobre la diagonal <img src="http://latex.codecogs.com/svg.latex? x = y" border="0">:</p>
+    <img id="proyeccion" src="http://latex.codecogs.com/svg.latex? T(v) = \begin{pmatrix}
+\frac{1}{2} &amp; \frac{1}{2}\\
+\frac{1}{2} &amp; \frac{1}{2}\\
+\end{pmatrix}\begin{pmatrix}
+x\\
+y\\
+\end{pmatrix}" border="0">
+    <button id="opcionn_3" type="button" onclick="opcionn_3()" class="btn btn-light " style="background-color: lightcyan">Proyección</button>
+    <p id="uno">O bien, puedes ingresar tu propia transformación lineal:</p>
+    <button id="opcionn_4" type="button" onclick="presionarboton()" class="btn btn-light " style="background-color: lightcyan">confirmar</button>
+    <img id="transformacion" src="http://latex.codecogs.com/svg.latex? T(v) = \text{\huge ( } \hspace{40pt}\text{\huge )}
+        \normalsize
+\begin{pmatrix}
+x\\
+y\\
+\end{pmatrix}" border="0">
+  </div>
+
+
+
+</body></html><!-- <p>La nueva base con la que estamos trabajando está definida por</p>
+<img id="base_nueva" src="http://latex.codecogs.com/svg.latex? B_2 = \begin{pmatrix}
+1 & 0 & 1\\
+0 & 1 & 1\\
+1 & 1 & 0\\
+\end{pmatrix}" border="0" />
+    <p id="ultima">y presionando el botón "Cambiar Base" se puede modificar cuál de ellas se ve representada en el gráfico.</p>
+    <button id="cambiarbase" type="button" onclick="cambiarbase()" class="btn btn-light" style="background-color: lightcyan">Cambiar Base</button>-->

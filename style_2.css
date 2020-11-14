@@ -1,0 +1,40 @@
+html,
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 15px;
+  margin: 10px;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#barra_lateral {
+  width: 400px;
+  padding: 10px;
+  margin-left: 10px;
+  border: 5px solid grey;
+  background-color: rgb(240, 240, 240);
+  margin: 10;
+  color: rgb(0);
+}
+#opcionn_1 {
+  margin-left: 70px;
+}
+#opcionn_2 {
+  margin-left: 100px;
+}
+#opcionn_3 {
+  margin-left: 90px;
+}
+#tuno {
+  margin-bottom: 100px;
+}
+#opcionn_4 {
+  margin-top: -180px;
+  margin-left: 250px;
+}
+#transformacion{
+  margin-top: -90px;
+}
