@@ -33,12 +33,15 @@ canvas {
 #base_canon {
   margin-right: 150px;
   margin-left: 100px;
+  border: 1px solid rgb(0, 0, 255);
+  padding: 5;
 }
 
 #base_nueva {
   margin-right: 150px;
   margin-left: 100px;
   margin-bottom: 10px;
+  border: 1px solid rgb(0, 255, 0);
 }
 
 #cambiarbase {

@@ -8,42 +8,49 @@ class nueva {
     this.vy = this.b.dot(this.v);
     this.vz = this.c.dot(this.v);
     this.v_c = createVector(this.vx, this.vy, this.vz);
+    this.v_c = this.v_c.mult(10);
 
     this.aux = createVector(this.v.x, 0, 0);
     this.vx = this.a.dot(this.aux);
     this.vy = this.b.dot(this.aux);
     this.vz = this.c.dot(this.aux);
     this.v2x = createVector(this.vx, this.vy, this.vz);
+    this.v2x = this.v2x.mult(10);
 
     this.aux = createVector(0, this.v.y, 0);
     this.vx = this.a.dot(this.aux);
     this.vy = this.b.dot(this.aux);
     this.vz = this.c.dot(this.aux);
     this.v2y = createVector(this.vx, this.vy, this.vz);
+    this.v2y = this.v2y.mult(10);
 
     this.aux = createVector(0, 0, this.v.z);
     this.vx = this.a.dot(this.aux);
     this.vy = this.b.dot(this.aux);
     this.vz = this.c.dot(this.aux);
     this.v2z = createVector(this.vx, this.vy, this.vz);
+    this.v2z = this.v2z.mult(10);
 
     this.aux = createVector(this.v.x, this.v.y, 0);
     this.vx = this.a.dot(this.aux);
     this.vy = this.b.dot(this.aux);
     this.vz = this.c.dot(this.aux);
     this.aux1 = createVector(this.vx, this.vy, this.vz);
+    this.aux1 = this.aux1.mult(10);
 
     this.aux = createVector(this.v.x, 0, this.v.z);
     this.vx = this.a.dot(this.aux);
     this.vy = this.b.dot(this.aux);
     this.vz = this.c.dot(this.aux);
     this.aux2 = createVector(this.vx, this.vy, this.vz);
+    this.aux2 = this.aux2.mult(10);
 
     this.aux = createVector(0, this.v.y, this.v.z);
     this.vx = this.a.dot(this.aux);
     this.vy = this.b.dot(this.aux);
     this.vz = this.c.dot(this.aux);
     this.aux3 = createVector(this.vx, this.vy, this.vz);
+    this.aux3 = this.aux3.mult(10);
   }
   mostrar() {
     strokeWeight(1);
@@ -55,11 +62,26 @@ class nueva {
     line(0, 0, 0, -200, 0, -200);
     line(0, 0, 0, 0, 200, -200);
     line(0, 0, 0, -200, 200, 0);
-    strokeWeight(3);
+    strokeWeight(2);
     stroke(0);
-    line(0, 0, 0, 20, 0, 20);
-    line(0, 0, 0, 0, -20, 20);
-    line(0, 0, 0, 20, -20, 0);
+    line(0, 0, 0, 10, 0, 10);
+    line(0, 0, 0, 0, -10, 10);
+    line(0, 0, 0, 10, -10, 0);
+    push();
+    translate(10, 0, 10);
+    rotateZ(-HALF_PI);
+    cone(2, 4);
+    pop();    
+    push();
+    translate(10, -10, 0);
+    //rotateZ(-HALF_PI);
+    cone(2,4);
+    pop();   
+    push();
+    translate(0, -10, 10);
+    rotateX(PI);
+    cone(2,4);
+    pop();
     strokeWeight(1);
     stroke(256, 100, 0);
     line(this.v2x.x, -this.v2x.y, this.v2x.z, this.aux1.x, -this.aux1.y, this.aux1.z);

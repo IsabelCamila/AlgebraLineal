@@ -14,19 +14,19 @@ var m;
 
 function setup() {
   m = true;
-  entrada1 = createInput('20');
+  entrada1 = createInput('2');
   entrada1.position(-80, -555, 'relative');
   entrada1.size(60, 25);
   entrada1.style('background-color', 'lightcyan');
   entrada1.parent(barra_lateral);
   entrada1.changed(presionarboton);
-  entrada2 = createInput('10');
+  entrada2 = createInput('3');
   entrada2.position(-140, -530, 'relative');
   entrada2.size(60, 25);
   entrada2.style('background-color', 'lightcyan');
   entrada2.parent(barra_lateral);
   entrada2.changed(presionarboton);
-  entrada3 = createInput('60');
+  entrada3 = createInput('-1');
   entrada3.position(160, -537, 'relative');
   entrada3.size(60, 25);
   entrada3.style('background-color', 'lightcyan');
@@ -35,7 +35,7 @@ function setup() {
   cnv = createCanvas(ancho, alto, WEBGL);
   cnv.position(480, 120)
   pizarra = createGraphics(160, 300);
-  v = createVector(20, 10, 60);
+  v = createVector(2, 3, -1);
   base_n = new nueva(v);
   p = new vector_v(base_n.v_c);
   base_c = new canonica(base_n.v_c);
