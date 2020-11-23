@@ -33,7 +33,7 @@ function setup() {
   entrada4.style('background-color', 'lightcyan');
   entrada4.parent(uno);
   cv = createCanvas(500, 500);
-  cv.position(480, 120)
+  cv.position(480, 220)
   cv.mousePressed(cambiarvec);
   colorMode(RGB, 256);
   origen = createVector(0, 0);

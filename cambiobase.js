@@ -33,7 +33,7 @@ function setup() {
   entrada3.parent(barra_lateral);
   entrada3.changed(presionarboton);
   cnv = createCanvas(ancho, alto, WEBGL);
-  cnv.position(480, 120)
+  cnv.position(480, 220)
   pizarra = createGraphics(160, 300);
   v = createVector(2, 3, -1);
   base_n = new nueva(v);

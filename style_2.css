@@ -10,7 +10,30 @@ canvas {
   display: block;
 }
 
+.header {  
+  height: 120px;
+  overflow: hidden;
+  padding: 10px 10px;  
+  border: 2px solid #00FFFF;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header-right {
+  float: right;
+}
+
 #barra_lateral {
+  margin-top: 15px;
   width: 400px;
   padding: 10px;
   margin-left: 10px;
@@ -19,22 +42,61 @@ canvas {
   margin: 10;
   color: rgb(0);
 }
+
 #opcionn_1 {
   margin-left: 70px;
 }
+
 #opcionn_2 {
   margin-left: 100px;
 }
+
 #opcionn_3 {
   margin-left: 90px;
 }
+
 #tuno {
   margin-bottom: 100px;
 }
+
 #opcionn_4 {
   margin-top: -180px;
   margin-left: 250px;
 }
-#transformacion{
+
+#transformacion {
   margin-top: -90px;
+}
+
+.footer {
+  margin-top: 15px;
+  height: 55px;
+  overflow: hidden;
+  background-color: #00FFFF;
+  padding: 10px 10px;
+}
+
+.footer a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 10px;
+  border-radius: 4px;
+}
+
+.footer p {
+  float: left;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 10px;
+  border-radius: 4px;
+}
+
+.footer-center {
+  float: center;
 }
