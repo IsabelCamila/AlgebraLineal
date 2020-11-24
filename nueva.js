@@ -67,21 +67,7 @@ class nueva {
     line(0, 0, 0, 10, 0, 10);
     line(0, 0, 0, 0, -10, 10);
     line(0, 0, 0, 10, -10, 0);
-    push();
-    translate(10, 0, 10);
-    rotateZ(-HALF_PI);
-    cone(2, 4);
-    pop();    
-    push();
-    translate(10, -10, 0);
-    //rotateZ(-HALF_PI);
-    cone(2,4);
-    pop();   
-    push();
-    translate(0, -10, 10);
-    rotateX(PI);
-    cone(2,4);
-    pop();
+    
     strokeWeight(1);
     stroke(256, 100, 0);
     line(this.v2x.x, -this.v2x.y, this.v2x.z, this.aux1.x, -this.aux1.y, this.aux1.z);
