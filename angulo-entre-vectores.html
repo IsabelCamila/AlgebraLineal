@@ -25,14 +25,14 @@
     </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Modelador cambio de base <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="https://isabelcamila.github.io/AlgebraLineal/">Modelador cambio de base <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item ">
           <a class="nav-link" href="https://isabelcamila.github.io/AlgebraLineal/imagen_tr">Imagen de una función <span class="sr-only"></span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://isabelcamila.github.io/AlgebraLineal/angulo-entre-vectores">Ángulo entre vectores <span class="sr-only"></span></a>
+      <li class="nav-item active">
+          <a class="nav-link" href="#">Ángulo entre vectores <span class="sr-only"></span></a>
         </li>
       </ul>
     </div>
@@ -41,31 +41,17 @@
 
   <div id="barra_lateral">
 
-    <script src="cambiobase.js"></script>
-    <script src="nueva.js"></script>
-    <script src="canonica.js"></script>
-    <script src="vector_v.js"></script>
-    <script src="barra_lateral.js"></script>
+    <script src="angulo.js"></script>
+    <script src="cartesiana.js"></script>
+    <script src="vectores.js"></script>
 
-    <p id="uno">Ingresa las coordenadas del vector en la base <img src="http://latex.codecogs.com/svg.latex? B_2" border=" 0"></p>
-    <button id="confirmar" type="button" onclick="presionarboton()" class="btn btn-light" style="background-color: lightcyan">Confirmar</button>
-
-    <p id="dos">Manipulando los deslizadores puedes cambiar la perspectiva con la que se ve el gráfico</p>
-    <p>La base canónica, con la que acostumbramos trabajar, está definida por</p>
-    <img id="base_canon" src="http://latex.codecogs.com/svg.latex? B_1 = \begin{pmatrix}
-1 &amp; 0 &amp; 0\\
-0 &amp; 1 &amp; 0\\
-0 &amp; 0 &amp; 1\\
-\end{pmatrix}" border="0">
-    <p>La nueva base con la que estamos trabajando está definida por</p>
-    <img id="base_nueva" src="http://latex.codecogs.com/svg.latex? B_2 = \begin{pmatrix}
-1 &amp; 0 &amp; 1\\
-0 &amp; 1 &amp; 1\\
-1 &amp; 1 &amp; 0\\
-\end{pmatrix}" border="0">
-    <p id="ultima">y presionando el botón "Cambiar Base" se puede modificar cuál de ellas se ve representada en el gráfico.</p>
-    <button id="cambiarbase" type="button" onclick="cambiarbase()" class="btn btn-light" style="background-color: lightcyan">Cambiar Base</button>
-  </div>
+    <p id="uno">Ingresa las coordenadas de los vectores</p>
+     
+    <button id="confirmar_1" type="button" onclick="presionarboton()" class="btn btn-light" style="background-color: lightcyan">Confirmar</button>
+    <p id="dos">El ángulo (en radianes) que se forma entre esos dos vectores es:</p>
+    <p id="tres">Manipulando los deslizadores puedes cambiar la perspectiva con la que se ve el gráfico</p>
+    
+  </div>  
   <div class="footer">
     <div class="footer-center">
       <a>Autores:</a>
