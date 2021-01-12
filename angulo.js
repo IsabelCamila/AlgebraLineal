@@ -31,7 +31,7 @@ function setup() {
   entrada3.parent(uno);
   entrada3.changed(presionarboton);
 
-  entrada1_2 = createInput('1');
+  entrada1_2 = createInput('-1');
   entrada1_2.position(80, 0, 'relative');
   entrada1_2.size(60, 25);
   entrada1_2.style('background-color', 'lightgreen');
@@ -55,11 +55,11 @@ function setup() {
   cnv.position(480, 220)
   pizarra = createGraphics(160, 300);
   v_1 = createVector(2, 3, -1);
-  v_2 = createVector(1, 1, 1);
+  v_2 = createVector(-1, 2, 3);
   p = new vectores(v_1, v_2);
-  
+
   angulo_ = createP(p.theta);
-  angulo_.position(100, 0, 'relative');
+  angulo_.position(190, 23, 'relative');
   angulo_.parent(dos);
 
   base_c = new canonica();
@@ -70,7 +70,7 @@ function setup() {
       sliderGroup[i] = createSlider(-400, 400, 0);
     }
     h = map(i, 0, 3, 0, 80);
-    sliderGroup[i].position(125 - (80 * i), h - 70, 'relative');
+    sliderGroup[i].position(125 - (80 * i), h - 140, 'relative');
     sliderGroup[i].style('width', '80px');
     sliderGroup[i].parent(barra_lateral)
   }
@@ -98,9 +98,9 @@ function presionarboton() {
   v_2 = createVector(float(var1), float(var2), float(var3));
   base_c = new canonica();
   p = new vectores(v_1, v_2);
-  
+
   angulo_.html(str(p.theta));
-  angulo_.position(100, 0, 'relative');
+  angulo_.position(190, 23, 'relative');
   angulo_.parent(dos);
 }
 
