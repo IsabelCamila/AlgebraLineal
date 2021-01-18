@@ -59,7 +59,7 @@ function setup() {
   p = new vectores(v_1, v_2);
 
   angulo_ = createP(p.theta);
-  angulo_.position(190, 23, 'relative');
+  angulo_.position(220, 23, 'relative');
   angulo_.parent(dos);
 
   base_c = new canonica();
